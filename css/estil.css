@@ -299,7 +299,7 @@ hr {
     height: 3rem;
 }
 
-.project-info p a i:hover {
+.project-info i:hover {
     color: #c3073f;
 }
 
@@ -320,6 +320,12 @@ hr {
 }
 
 /* RESPONSIVE */
+@media (max-width: 1024px) {
+    #wrapper {
+        width: 90vw;
+    }
+}
+
 @media (max-width: 767px) {
     
     h1 {
@@ -346,15 +352,12 @@ hr {
     #software div {
         flex: 0 50%;
     }
-
-    /*#skill-list {
-        justify-content: stretch;
-    }*/
-
     .project {
-        display: inline-block;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
     .project img {
         margin-bottom: 1rem;
     }
@@ -365,5 +368,12 @@ hr {
 
     .project-info p {
         height: 3rem;
+    }
+}
+
+@media (max-width: 415px) {
+    .project {
+        flex-direction: column;
+        text-align: center;
     }
 }
