@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/** GLOBAL **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #7e7e81;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'MuseoModerno', cursive;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 15px;
+    color: #c3073f;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'MuseoModerno', cursive;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: #c3073f;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+    min-height: 100vh;
+
+    background-color: #1a1a1d;
+}
+
+hr {
+    margin: 1rem;
+    color: #c3073f;
+    box-shadow: 0px 0px 5px #c3073f;
+}
+
+/* STYLES */
+
+/** PAGE **/
+#wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 35vw;
+}
+
+/** HEADER **/
+#header p {
+    text-align: center;
+}
+
+/** SOCIAL LINKS **/
+#social {
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+}
+
+#social a {
+    /*margin-top: 0.5rem;*/
+    border: 2px solid #2d2d31;
+    border-radius: 25%;
+    margin: 1rem 0.5rem 0 0.5rem;
+}
+
+#social i {
+    font-size: 2em;
+    margin: 1rem;
+    width: 32px;
+    height: 32px;
+}
+
+#gr:hover {
+    color: #dd2a7b;
+}
+
+#tw:hover {
+    color: #1DA1F2;
+}
+
+#ar:hover {
+    color: #13aef0;
+}
+
+#in:hover {
+    color: #0a66c2;
+}
+
+#in:hover {
+    color: #0a66c2;
+}
+
+#ma:hover {
+    color: gainsboro;
+}
+
+/** NAVIGATION **/
+#tabs {
+    display: flex;
+    justify-content: space-around;
+
+    font-family: 'MuseoModerno', cursive;
+    text-transform: uppercase;
+    font-weight: 300;
+
+    margin: 1.5rem 0 2rem 0;
+}
+
+.tab {
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.tab.active {
+    color: #c3073f;
+}
+
+.tab:hover {
+    cursor: pointer;
+    color: #950740;
+}
+
+/** CONTENT **/
+#content {
+    flex-grow: 1;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.articul {
+    /*margin: 0;*/
+    flex-grow: 1;
+}
+
+#about {
+    margin: 0;
+}
+
+#software {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+#software div {
+    padding-top: 1rem;
+    flex: 0 25%;
+}
+
+#software img {
+    max-width: 15%;
+}
+
+/** SKILLS **/
+#skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    border: 2px solid rgba(195, 7, 63, .75);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.skill p {
+    padding: 5px;
+}
+
+/** CONTACT FORM **/
+#contact {
+    margin: 0;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.form-control {
+    width: 20rem;
+    background: transparent;
+    outline: none;
+    border: 1px solid #c3073f;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 10px;
+}
+
+.submit {
+    font-weight: 700;
+}
+
+.submit:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #c3073f;
+}
+
+.reset-form {
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+    text-decoration: underline;
+}
+
+/** GALLERY **/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /*justify-content: center;*/
+}
+
+
+.gallery-img {
+    max-width: 25%;
+    height: auto;
+    margin: 0.5rem;
+
+    transition: .5s ease;
+}
+
+.gallery-img:hover  {
+    /*opacity: 0.3;
+    filter: blur(3px);*/
+    transform: scale(1.5);
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+/** PROJECT **/
+.project {
+    display: flex;
+}
+
+.project img {
+    max-width: 165px;
+    height: auto;
+    margin-right: 1rem;
+    flex: 1;
+}
+
+.project-tags {
+    flex: 1;
+    align-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.project-tags p {
+    height: 3rem;
+}
+
+.project-info {
+    flex: 2;
+}
+
+.project-info p {
+    height: 3rem;
+}
+
+.project-info p a i:hover {
+    color: #c3073f;
+}
+
+/** FOOTER **/
+#foot {
+    margin: 2rem;
+}
+
+#contact p {
+    text-align: center;
+}
+
+#copyright {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 10pt;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+    
+    h1 {
+        text-align: center;
+    }
+    
+    #wrapper {
+        width: 90vw;
+    }
+
+    #social a {
+        margin: 0.5rem 0.5rem 0 0.5rem;
+        /*border: none;*/
+    }
+
+    #social i {
+        margin: 0.5rem;
+    }
+
+    .separator {
+        display: none;
+    }
+    
+    #software div {
+        flex: 0 50%;
+    }
+
+    /*#skill-list {
+        justify-content: stretch;
+    }*/
+
+    .project {
+        display: inline-block;
+        text-align: center;
+    }
+    .project img {
+        margin-bottom: 1rem;
+    }
+
+    .project-tags {
+        display: none;
+    }
+
+    .project-info p {
+        height: 3rem;
+    }
+}
