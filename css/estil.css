@@ -320,7 +320,7 @@ hr {
 }
 
 /* RESPONSIVE */
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
     #wrapper {
         width: 90vw;
     }
@@ -332,13 +332,12 @@ hr {
         text-align: center;
     }
     
-    #wrapper {
+    /*#wrapper {
         width: 90vw;
-    }
+    }*/
 
     #social a {
         margin: 0.5rem 0.5rem 0 0.5rem;
-        /*border: none;*/
     }
 
     #social i {
@@ -352,6 +351,7 @@ hr {
     #software div {
         flex: 0 50%;
     }
+
     .project {
         display: flex;
         align-items: center;
