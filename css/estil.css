@@ -202,7 +202,7 @@ hr {
 }
 
 /** CONTACT FORM **/
-#contact {
+/*#contact {
     margin: 0;
 }
 
@@ -239,7 +239,7 @@ hr {
     outline: none;
     border: none;
     text-decoration: underline;
-}
+}*/
 
 /** GALLERY **/
 .gallery {
@@ -299,7 +299,7 @@ hr {
     height: 3rem;
 }
 
-.project-info i:hover {
+.project-info b:hover {
     color: #c3073f;
 }
 
@@ -344,9 +344,9 @@ hr {
         margin: 0.5rem;
     }
 
-    .separator {
+    /*.separator {
         display: none;
-    }
+    }*/
     
     #software div {
         flex: 0 50%;
@@ -369,6 +369,7 @@ hr {
     .project-info p {
         height: 3rem;
     }
+    
 }
 
 @media (max-width: 415px) {
