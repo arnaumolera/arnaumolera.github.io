@@ -373,6 +373,7 @@ hr {
 
     .project-info p {
         height: 3rem;
+        justify-content: center;
     }
     
 }
