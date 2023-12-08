@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400;1,9..144,700&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400;1,9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400;1,9..144,700&family=Roboto:wght@900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /** GLOBAL **/
 * {
@@ -7,9 +8,9 @@
     padding: 0;
     box-sizing: border-box;
     
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Fira Code', sans-serif;
     font-weight: 400;
-    color: #7e7e81;
+    color: #cdd6f4;
 }
 
 li {
@@ -21,22 +22,29 @@ a {
 }
 
 h1 {
-    font-family: 'MuseoModerno', cursive;
-    text-transform: uppercase;
-    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 3.5rem;
     font-weight: 700;
-    letter-spacing: 15px;
-    color: #c3073f;
+    color: #74c7ec;
     text-align: center;
 }
 
-h4 {
-    font-family: 'MuseoModerno', cursive;
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 600;
+h2 {
+    font-family: 'Space Mono', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
     text-align: center;
-    color: #c3073f;
+    color: #74c7ec;
+}
+
+h4 {
+    font-family: 'Space Mono', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    color: #74c7ec;
 }
 
 body {
@@ -45,13 +53,12 @@ body {
 
     min-height: 100vh;
 
-    background-color: #1a1a1d;
+    background-color: #1e1e2e;
 }
 
 hr {
     margin: 1rem;
-    color: #c3073f;
-    box-shadow: 0px 0px 5px #c3073f;
+    color: #cba6f7;
 }
 
 /* STYLES */
@@ -80,7 +87,6 @@ hr {
 }
 
 #social a {
-    /*margin-top: 0.5rem;*/
     border: 2px solid #2d2d31;
     border-radius: 25%;
     margin: 1rem 0.5rem 0 0.5rem;
@@ -93,27 +99,38 @@ hr {
     height: 32px;
 }
 
-#gr:hover {
+#insta:hover {
+    border-color: #dd2a7b;
+}
+#insta:hover i {
     color: #dd2a7b;
 }
 
-#tw:hover {
+#twt:hover {
+    border-color: #1DA1F2;
+}
+#twt:hover i {
     color: #1DA1F2;
 }
 
-#ar:hover {
+#arts:hover {
+    border-color: #13aef0;
+}
+#arts:hover i {
     color: #13aef0;
 }
 
-#in:hover {
+#lnkd:hover {
+    border-color: #0a66c2;
+}
+#lnkd:hover i {
     color: #0a66c2;
 }
 
-#in:hover {
-    color: #0a66c2;
+#mailto:hover {
+    border-color: gainsboro;
 }
-
-#ma:hover {
+#mailto:hover i {
     color: gainsboro;
 }
 
@@ -122,7 +139,6 @@ hr {
     display: flex;
     justify-content: space-around;
 
-    font-family: 'MuseoModerno', cursive;
     text-transform: uppercase;
     font-weight: 300;
 
@@ -130,18 +146,21 @@ hr {
 }
 
 .tab {
+    font-family: 'Space Mono', sans-serif;
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 2px;
+    color: #fab387;
 }
 
 .tab.active {
-    color: #c3073f;
+    color: #a6e3a1;
 }
 
 .tab:hover {
     cursor: pointer;
-    color: #950740;
+    color: #a6e3a1;
+    font-weight: 700;
 }
 
 /** CONTENT **/
@@ -157,9 +176,25 @@ hr {
     display: block;
 }
 
+.bio {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #11111b;
+}
+
 .articul {
-    /*margin: 0;*/
     flex-grow: 1;
+}
+
+.articul-gallery {
+    display: flex;
+    background-color: #11111b;
+    border-radius: 1rem;
+}
+
+.articul-gallery a {
+    display: flex;
+    justify-content: center;
 }
 
 #about {
@@ -192,7 +227,7 @@ hr {
 }
 
 .skill {
-    border: 2px solid rgba(195, 7, 63, .75);
+    border: 2px solid rgba(148, 226, 213, .75);
     border-radius: 5px;
     margin: 5px;
 }
@@ -201,67 +236,25 @@ hr {
     padding: 5px;
 }
 
-/** CONTACT FORM **/
-/*#contact {
-    margin: 0;
-}
-
-.contact-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-}
-
-.form-control {
-    width: 20rem;
-    background: transparent;
-    outline: none;
-    border: 1px solid #c3073f;
-    border-radius: 5px;
-    margin: 1rem;
-    padding: 10px;
-}
-
-.submit {
-    font-weight: 700;
-}
-
-.submit:hover {
-    cursor: pointer;
-    box-shadow: 0px 0px 10px #c3073f;
-}
-
-.reset-form {
-    cursor: pointer;
-    background: transparent;
-    outline: none;
-    border: none;
-    text-decoration: underline;
-}*/
-
 /** GALLERY **/
 .gallery {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    /*justify-content: center;*/
 }
 
-
 .gallery-img {
-    max-width: 25%;
+    display: flex;
+    max-width: 75%;
     height: auto;
-    margin: 0.5rem;
-
+    margin: 1rem;
+    border-radius: 1rem;
+    
     transition: .5s ease;
 }
 
 .gallery-img:hover  {
-    /*opacity: 0.3;
-    filter: blur(3px);*/
     transform: scale(1.5);
     cursor: pointer;
 
@@ -271,36 +264,56 @@ hr {
 /** PROJECT **/
 .project {
     display: flex;
+    background-color: #11111b;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.project-img {
+    display: inherit;
+    align-items: center;
+    padding: 1rem;
 }
 
 .project img {
     max-width: 165px;
     height: auto;
-    margin-right: 1rem;
     flex: 1;
+    margin: 1rem;
 }
 
 .project-tags {
     flex: 1;
     align-content: flex-end;
     align-items: flex-end;
-
 }
 
 .project-tags p {
-    height: 3rem;
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
 }
 
 .project-info {
-    flex: 2;
+    flex: 3;
 }
 
 .project-info p {
-    height: 3rem;
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
 }
 
-.project-info b:hover {
-    color: #c3073f;
+.project-info a {
+    color: #a6e3a1;
+}
+
+.project-info a:hover {
+    color: #fab387;
+}
+
+.fas fa-link {
+    color: #fab387;
 }
 
 /** FOOTER **/
@@ -331,10 +344,6 @@ hr {
     h1 {
         text-align: center;
     }
-    
-    /*#wrapper {
-        width: 90vw;
-    }*/
 
     #social a {
         margin: 0.5rem 0.5rem 0 0.5rem;
@@ -343,10 +352,6 @@ hr {
     #social i {
         margin: 0.5rem;
     }
-
-    /*.separator {
-        display: none;
-    }*/
     
     #software div {
         flex: 0 50%;

@@ -21,6 +21,7 @@ tabs.forEach(tab => {
   })
 });
 
+document.getElementById("year").innerHTML = new Date().getFullYear();
 
 /** CLEAR FORM */
 function clearForm() {

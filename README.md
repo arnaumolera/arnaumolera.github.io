@@ -13,6 +13,7 @@ https://arnaumolera.github.io
 
 ## Versions
 
+2.0 - _New design_
 1.0 - _Initial version_
 
 ## Author 
@@ -25,4 +26,4 @@ I don't know what I'm doing.
 
 ## License
 
-© 2021, Arnau Molera. Some Rights Reserved.
+© 2024, Arnau Molera. Some Rights Reserved.
