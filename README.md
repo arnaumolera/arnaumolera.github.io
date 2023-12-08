@@ -13,8 +13,8 @@ https://arnaumolera.github.io
 
 ## Versions
 
-2.0 - _New design_
-1.0 - _Initial version_
+2.0 - _New design_\
+1.0 - Initial version
 
 ## Author 
 
