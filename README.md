@@ -1,6 +1,6 @@
 # Web Portfolio
 
-This is a simple (yet beautiful  ^^) web portfolio I made to show some work I've done.
+This is a simple (yet beautiful  ^^) web portfolio I made to show some of the work I've done.
 
 ### Demo
 
@@ -13,7 +13,8 @@ https://arnaumolera.github.io
 
 ## Versions
 
-2.0 - _New design_\
+2.1 - Update ifno & added new projects
+2.0 - New design
 1.0 - Initial version
 
 ## Author 
