@@ -257,6 +257,7 @@ hr {
 .gallery-img:hover  {
     transform: scale(1.5);
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 1) 0px 10px 30px;
 
     transition: .2s ease;
 }
