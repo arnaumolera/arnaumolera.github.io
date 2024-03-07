@@ -188,6 +188,8 @@ hr {
 
 .articul-gallery {
     display: flex;
+    flex-wrap: wrap;
+
     background-color: #11111b;
     border-radius: 1rem;
 }
@@ -195,6 +197,7 @@ hr {
 .articul-gallery a {
     display: flex;
     justify-content: center;
+    flex: 1 1 33%;
 }
 
 #about {
@@ -246,6 +249,7 @@ hr {
 
 .gallery-img {
     display: flex;
+
     max-width: 60%;
     height: auto;
     margin: 1rem;
