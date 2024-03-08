@@ -332,9 +332,15 @@ hr {
 
 #copyright {
     font-weight: 300;
-    font-style: italic;
+    /*font-style: italic;*/
     font-size: 10pt;
     text-align: center;
+}
+
+#author {
+    display: inline;
+    color: #cba6f7;
+    white-space: nowrap;
 }
 
 /* RESPONSIVE */
