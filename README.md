@@ -13,7 +13,8 @@ https://arnaumolera.github.io
 
 ## Versions
 
-2.1 - _Update info & added new projects_\
+2.2 - _Update typos, added Bluesky profile_\
+2.1 - Update info & added new projects\
 2.0 - New design\
 1.0 - Initial version
 

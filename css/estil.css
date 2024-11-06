@@ -106,6 +106,13 @@ hr {
     color: #dd2a7b;
 }
 
+#bsky:hover {
+    border-color: #1081f6;
+}
+#bsky:hover i {
+    color: #1081f6;
+}
+
 #twt:hover {
     border-color: #1DA1F2;
 }
