@@ -95,7 +95,7 @@ hr {
 #social i {
     font-size: 2em;
     margin: 1rem;
-    width: 32px;
+    width: 36px;
     height: 32px;
 }
 
@@ -364,7 +364,8 @@ hr {
     }
 
     #social a {
-        margin: 0.5rem 0.5rem 0 0.5rem;
+        /*border: none;*/
+        margin: 0.5rem 0.25rem 0 0rem;
     }
 
     #social i {
